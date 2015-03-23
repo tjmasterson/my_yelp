@@ -1,23 +1,29 @@
 <div class="container">
-  <h1>Welcome to Sinatra!</h1>
-  <p>Hello, world!</p>
+  <h1>Welcome!</h1>
+    <p>Sign into your account below.</p>
+  <br>
+  <form action="/login", method="POST">
+    <li>
+    <label for="user_email">Email</label>
+    <input id="user_email" type="text" name="user[email]" autofocus />
+  </li>
+  <br>
+    <li>
+    <label for="user_password">Password</label>
+    <input id="user_password" type="password" name="user[password]" />
+  </li>
+  <br>
+  <li>
+    <input class="submit_button" type="submit" value="Save" />
+  </li>
+  </form>
 
-  <table>
-    <tr>
-      <th>File Description</th>
-      <th>File Location</th>
-    </tr>
-    <tr>
-      <td>This view file</td>
-      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The layout file</td>
-      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-    <tr>
-      <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
-    </tr>
-  </table>
+  <br>
+  <p>New to this site?<p>
+  <a href="/users/new">Create an account</a>
+
+  <br>
+
+
+
 </div>
