@@ -1,0 +1,5 @@
+# user1 = User.new({name: })
+chicago = City.new({name: "Chicago"})
+first_rest = Restaurant.create({name: "first_rest", city_id: 1})
+schmidtys = Restaurant.create({name: "Schmidty's", city_id: 1})
+taylors_place = Restaurant.create({name: "Taylor's Place", city_id: 1})
