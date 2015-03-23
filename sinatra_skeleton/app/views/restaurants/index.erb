@@ -1,1 +1,11 @@
-"Hello"
+<div class="container">
+  <h1>Restaurants in your town:</h1>
+  <% @restaurants.each do |restaurant| %>
+    <ul>
+      <li><a href="/restaurants/<%=restaurant.id %>"><%= restaurant.name %></a></li>
+      <li>Restaurant Avg.</li>
+    </ul>
+    <hr>
+  <% end %>
+  <a href="/restaurants/reviews/new">Review Restaurant</a>
+</div>
