@@ -10,7 +10,7 @@ post "/login" do
     session[:user_id] = user.id
     redirect "/restaurants"
   else
-    @errors = user.errors.messages
+    @errors = user.errors.messagesra
     erb :"index"
   end
 end

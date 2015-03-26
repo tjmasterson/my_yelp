@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Write Review</h1>
+  <form action="/<%= @restaurant.id %>/reviews/new" method="POST">
+    <label for="rating1">1 Star</label>
+    <input type="radio" name="review[rating]" value="1" >
+    <label for="rating2">2 Star</label>
+    <input type="radio" name="review[rating]" value="2" >
+    <label for="rating3">3 Star</label>
+    <input type="radio" name="review[rating]" value="3" >
+    <label for="rating4">4 Star</label>
+    <input type="radio" name="review[rating]" value="4">
+    <label for="rating5">5 Star</label>
+    <input type="radio" name="review[rating]" value="5" >
+    <li>
+    <textarea id="restaurant_review" type="text" name="review[comment]" rows="25" cols="40">Your Review Here</textarea>
+  </li>
+   <br>
+  <li>
+    <input class="submit_button" type="submit" value="Post" />
+  </li>
+  </form>
+</div>
